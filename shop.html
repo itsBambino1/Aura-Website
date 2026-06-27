@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AURA | Shop</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-wrap">
+    <h2 class="logo">AURA</h2>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="shop-hero">
+  <p class="shop-label">SPRING / SUMMER 2026</p>
+  <h1>Curated for Modern Elegance</h1>
+  <p>Timeless silhouettes, quiet luxury, and elevated essentials.</p>
+</section>
+
+<section class="controls">
+  <input type="text" id="searchInput" placeholder="Search products...">
+
+  <select id="sortSelect">
+    <option value="default">Sort by</option>
+    <option value="low">Price: Low to High</option>
+    <option value="high">Price: High to Low</option>
+  </select>
+</section>
+
+<section class="filters">
+  <button data-category="all" class="active">All</button>
+  <button data-category="blazer">Blazers</button>
+  <button data-category="coat">Coats</button>
+  <button data-category="essential">Essentials</button>
+  <button data-category="knitwear">Knitwear</button>
+</section>
+
+<section class="products">
+  <div id="productsGrid" class="products-grid"></div>
+</section>
+
+<script src="shop.js"></script>
+</body>
+</html>

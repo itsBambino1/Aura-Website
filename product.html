@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AURA | Product</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-wrap">
+    <h2 class="logo">AURA</h2>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="product-page">
+  <div class="product-container">
+
+    <div class="product-image">
+      <img id="productImg">
+    </div>
+
+    <div class="product-info">
+      <p class="label" id="productCategory"></p>
+      <h1 id="productName"></h1>
+      <p class="price" id="productPrice"></p>
+      <p class="description" id="productDesc"></p>
+
+      <div class="selectors">
+        <select id="size">
+          <option>S</option>
+          <option selected>M</option>
+          <option>L</option>
+        </select>
+
+        <input type="number" id="quantity" value="1" min="1">
+      </div>
+
+      <button id="addToCart">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<script src="product.js"></script>
+</body>
+</html>
